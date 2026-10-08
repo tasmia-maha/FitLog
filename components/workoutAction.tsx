@@ -26,11 +26,14 @@ export default function WorkoutAction({
             const plan:Workout[]=savedPlan ? JSON.parse(savedPlan):[]
             const alreadyAdded = plan.some((item)=>item.id===workout.id)
             if(alreadyAdded){
+                console.log("Plan updated event sent")
                 setMessage("Added to today's plan")
                 return
             }
             const updatedPlan=[...plan,workout]
             localStorage.setItem("fitlog-plan",JSON.stringify(updatedPlan))
+            window.dispatchEvent(new Event("fitlog-updated"))
+            
             setMessage("Already in today's plan")
         }
         const savedForLater=()=>{
@@ -43,6 +46,7 @@ export default function WorkoutAction({
             }
             const updatedSaved =[...saved,workout]
             localStorage.setItem("fitlog-saved",JSON.stringify(updatedSaved))
+            window.dispatchEvent(new Event("fitlog-updated"))
             setMessage("Saved for later")
         }
     return(
