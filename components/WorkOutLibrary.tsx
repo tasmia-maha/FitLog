@@ -13,6 +13,7 @@ type Workout={
 }
 export default function WorkoutLibrary(){
     const [workouts, setWorkouts]=useState<Workout[]>([])
+    const [sortBy, setSortBy] = useState("duration")
     const [loading,setLoading]=useState(true)
     useEffect(()=>{
         const fetchWorkouts = async()=>{
