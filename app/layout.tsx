@@ -33,8 +33,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className={oswald.variable}>
         <Navbar/>
-        {children}</body>
+        {children}
         <Footer/>
+      </body>
     </html>
   );
 }
