@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
+import Footer from "@/components/Footer";
 import { Oswald } from "next/font/google"; 
 
 const oswald=Oswald({
@@ -34,6 +34,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className={oswald.variable}>
         <Navbar/>
         {children}</body>
+        <Footer/>
     </html>
   );
 }
