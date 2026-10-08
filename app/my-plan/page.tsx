@@ -42,6 +42,7 @@ export default function MyPlan() {
     const updatedPlan=plan.filter((workout)=>workout.id !== id)
     setPlan(updatedPlan)
     localStorage.setItem("fitlog-plan",JSON.stringify(updatedPlan))
+    window.dispatchEvent(new Event("fitlog-updated"))
   }
   const renoveFromSaved =(id:number)=>{
     const updatedSaved = saved.filter((workout)=> workout.id!==id)
