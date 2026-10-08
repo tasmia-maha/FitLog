@@ -10,15 +10,15 @@ https://fitlog-workout-blush.vercel.app/
 
 ### Workout Library
 
-![FitLog Workout Library](./public/screenshots/home.png)
+![FitLog Screenshot 1](./public/screenshots/ss1.png)
 
 ### Workout Details
 
-![Workout Details](./public/screenshots/details.png)
+![FitLog Screenshot 2](./public/screenshots/ss2.png)
 
 ### My Plan
 
-![My Plan](./public/screenshots/my-plan.png)
+![FitLog Screenshot 3](./public/screenshots/ss3.png)
 
 ## Technologies Used
 
@@ -56,91 +56,6 @@ View detailed information about each workout, including:
 * Calories
 * Sets and reps
 * Step-by-step instructions
-
-### 3. Today's Plan
-
-Users can add workouts to their personal **Today's Plan** and manage their planned workouts from the My Plan page.
-
-### 4. Save for Later
-
-Users can save workouts for later and access them from their saved workout collection.
-
-### 5. Mark as Done
-
-Users can mark planned workouts as completed using the **Mark as Done** button with a check indicator.
-
-### 6. Remove Workout
-
-Users can remove a workout from Today's Plan using the remove button.
-
-### 7. Dynamic Navbar Counters
-
-The navbar displays the current number of:
-
-* Planned workouts
-* Saved workouts
-
-The counters update when workouts are added, saved, or removed.
-
-### 8. Responsive Design
-
-The application is designed to work across:
-
-* Mobile devices
-* Tablets
-* Desktop screens
-
-## API
-
-Workout data is fetched from a REST API:
-
-```text
-https://api.api-store.workers.dev/api/fitlog
-```
-
-Workout details are retrieved using the workout ID.
-
-## Getting Started
-
-### Prerequisites
-
-Make sure you have the following installed:
-
-* Node.js
-* npm
-* Git
-
-### Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/tasmia-maha/FitLog.git
-```
-
-Go to the project directory:
-
-```bash
-cd FitLog
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-### Run the Development Server
-
-```bash
-npm run dev
-```
-
-Open your browser and visit:
-
-```text
-http://localhost:3000
-```
 
 ## Project Structure
 
